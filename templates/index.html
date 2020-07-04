@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>contact us</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../static/contact1.png" alt="Lexus" class="logo" />
+      {% if message %}
+      <p class="message">{{ message | safe }}</p>
+      {% endif %}
+      <form action="/submit" method="POST">
+        <div class="form-group">
+          <h5>We only respond to company or university email addresses. No Gmail etc.</h5>
+          <select name="country">
+            <option value="austria">Austria</option>
+            <option value="germany">Germany</option>
+            <option value="italy">Italy</option>
+            <option value="slovenia">Slovenia</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <!-- <h3>Name</h3> -->
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <!-- <h3>Email</h3> -->
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <!-- <h3>Organization</h3> -->
+          <input
+            type="text"
+            name="org"
+            placeholder="Organization"
+          />
+        </div>
+        <div class="form-group">
+        <h3>What best describes your organization?</h3>
+        <select name="organization">
+          <option value="">Select...</option>
+          <option value="government">Government</option>
+          <option value="dmo">Tourism office</option>
+          <option value="consultant">Tourism consulting</option>
+          <option value="faculty">Academia - faculty</option>
+          <option value="student">Academia - student</option>
+        </select>
+      </div>
+        <div class="form-group">
+          <h3>What are you looking for? Was suchen Sie?</h3>
+          <textarea
+            name="comments"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Please write here. English or Deutsch works for us!!! Briefly tell us what you are looking for."
+          ></textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn" />
+      </form>
+    </div>
+  </body>
+</html>
