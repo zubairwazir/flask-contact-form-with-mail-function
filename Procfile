@@ -1,1 +1,1 @@
-web: gunicorn dropdown13_dash_form:server
+web: gunicorn app:app

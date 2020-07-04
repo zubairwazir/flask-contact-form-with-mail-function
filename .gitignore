@@ -1,4 +1,2 @@
-abnb2
-*.pyc
-.DS_Store
-.env
+.vscode
+__pycache__
