@@ -2,7 +2,7 @@
 
 > Python Flask Feedback app that sends data to Postgres database and emails user
 
-[img alt="alt_text" width="100%" height="100%" src="static/contact.com" />](https://zubairwazir/flask-contact-form-with-mail-function/static/contact.png)
+[<img alt="alt_text" width="100%" height="100%" src="static/contact.png" />](https://zubairwazir/flask-contact-form-with-mail-function/static/contact.png)
 
 # Live Site
 
