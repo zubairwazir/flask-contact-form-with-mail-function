@@ -8,10 +8,10 @@ ENV = 'prod'
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:nomore777@localhost:5432/flask'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/dbname'
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://jsfznvmrvwzwqg:f482c4fc2ec289ee8b5f299b9cfe27e7a761f3b372060f932014bb704259f52d@ec2-54-246-85-151.eu-west-1.compute.amazonaws.com:5432/d5qhg6d8na0ng4'
+    app.config['SQLALCHEMY_DATABASE_URI']= 'postgres://'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
